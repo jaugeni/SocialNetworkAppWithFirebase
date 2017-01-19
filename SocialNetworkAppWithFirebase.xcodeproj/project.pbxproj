@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93792DFA1E31613A005EA341 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93792DF91E31613A005EA341 /* ProfileImage.swift */; };
 		93792DFC1E3169A1005EA341 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93792DFB1E3169A1005EA341 /* PostCell.swift */; };
+		93792E001E317859005EA341 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93792DFF1E317859005EA341 /* DataService.swift */; };
 		93A3BD771E2FCF0A00934A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BD761E2FCF0A00934A30 /* AppDelegate.swift */; };
 		93A3BD7C1E2FCF0A00934A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A3BD7A1E2FCF0A00934A30 /* Main.storyboard */; };
 		93A3BD7E1E2FCF0A00934A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A3BD7D1E2FCF0A00934A30 /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 		500F2378B434BA68FE80E4FD /* Pods_SocialNetworkAppWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkAppWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93792DF91E31613A005EA341 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		93792DFB1E3169A1005EA341 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		93792DFD1E317807005EA341 /* SocialNetworkAppWithFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialNetworkAppWithFirebase.entitlements; sourceTree = "<group>"; };
+		93792DFF1E317859005EA341 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		93A3BD731E2FCF0A00934A30 /* SocialNetworkAppWithFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworkAppWithFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A3BD761E2FCF0A00934A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A3BD7B1E2FCF0A00934A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +74,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		93792DFE1E31782F005EA341 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93792DFF1E317859005EA341 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		93A3BD6A1E2FCF0A00934A30 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +103,7 @@
 		93A3BD751E2FCF0A00934A30 /* SocialNetworkAppWithFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				93792DFE1E31782F005EA341 /* Services */,
 				93A3BD8F1E30035500934A30 /* Util */,
 				93A3BD8A1E2FD0E400934A30 /* Model */,
 				93A3BD8C1E2FD0F300934A30 /* Controller */,
@@ -102,6 +114,7 @@
 				93A3BD7F1E2FCF0A00934A30 /* LaunchScreen.storyboard */,
 				93A3BD881E2FCF4300934A30 /* GoogleService-Info.plist */,
 				93A3BD821E2FCF0A00934A30 /* Info.plist */,
+				93792DFD1E317807005EA341 /* SocialNetworkAppWithFirebase.entitlements */,
 			);
 			path = SocialNetworkAppWithFirebase;
 			sourceTree = "<group>";
@@ -190,6 +203,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = P2GURVV2B3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -279,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A3BDC71E314D5400934A30 /* CircleView.swift in Sources */,
+				93792E001E317859005EA341 /* DataService.swift in Sources */,
 				93A3BD9B1E3012CC00934A30 /* FancyField.swift in Sources */,
 				93A3BDC91E31575700934A30 /* FancyPostBtn.swift in Sources */,
 				93A3BD771E2FCF0A00934A30 /* AppDelegate.swift in Sources */,
