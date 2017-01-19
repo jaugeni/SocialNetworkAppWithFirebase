@@ -18,6 +18,7 @@
 		93A3BD991E300E9500934A30 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BD981E300E9500934A30 /* FancyView.swift */; };
 		93A3BD9B1E3012CC00934A30 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BD9A1E3012CC00934A30 /* FancyField.swift */; };
 		93A3BDBF1E30163800934A30 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BDBE1E30163800934A30 /* FancyBtn.swift */; };
+		93A3BDC31E313CA500934A30 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3BDC21E313CA500934A30 /* FeedVC.swift */; };
 		A2D24AA834688B5E5BCFB50A /* Pods_SocialNetworkAppWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500F2378B434BA68FE80E4FD /* Pods_SocialNetworkAppWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		93A3BD981E300E9500934A30 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		93A3BD9A1E3012CC00934A30 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		93A3BDBE1E30163800934A30 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		93A3BDC21E313CA500934A30 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E8E1303F85F04719C6FFDEC3 /* Pods-SocialNetworkAppWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkAppWithFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworkAppWithFirebase/Pods-SocialNetworkAppWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				93A3BD941E30064D00934A30 /* SignInVC.swift */,
+				93A3BDC21E313CA500934A30 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				93A3BD771E2FCF0A00934A30 /* AppDelegate.swift in Sources */,
 				93A3BD991E300E9500934A30 /* FancyView.swift in Sources */,
 				93A3BD971E3007E800934A30 /* RoundBtn.swift in Sources */,
+				93A3BDC31E313CA500934A30 /* FeedVC.swift in Sources */,
 				93A3BD951E30064D00934A30 /* SignInVC.swift in Sources */,
 				93A3BD911E30037900934A30 /* Constants.swift in Sources */,
 				93A3BDBF1E30163800934A30 /* FancyBtn.swift in Sources */,
