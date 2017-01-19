@@ -1,14 +1,15 @@
 //
-//  FancyView.swift
+//  ProfileImage.swift
 //  SocialNetworkAppWithFirebase
 //
-//  Created by YAUHENI IVANIUK on 1/18/17.
+//  Created by YAUHENI IVANIUK on 1/19/17.
 //  Copyright © 2017 YauheniIvaniuk. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+@IBDesignable
+class ProfileImage: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +18,21 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
     }
+    
+    @IBInspectable var cornerRadius: CGFloat = 30.0 {
+        didSet{
+            setupView()
+        }
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        setupView()
+    }
+    
+    func setupView() {
+        layer.cornerRadius = cornerRadius
+    }
+
 
 }
