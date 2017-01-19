@@ -58,6 +58,14 @@
                                     <constraint firstAttribute="height" constant="150" id="Xb0-u4-4LL"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbG-Qf-47f"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GWd-3x-BjX">
                                 <rect key="frame" x="50" y="420" width="314" height="117"/>
