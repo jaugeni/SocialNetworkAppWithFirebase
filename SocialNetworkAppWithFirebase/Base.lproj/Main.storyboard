@@ -284,6 +284,7 @@
                                                                         </label>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-gA-2nu">
                                                                             <rect key="frame" x="322" y="0.0" width="60" height="60"/>
+                                                                            <gestureRecognizers/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="65o-2R-IOB"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="a3t-2l-TeL"/>
@@ -353,6 +354,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLbl" destination="Bcb-Iz-vCC" id="juw-0I-wOl"/>
+                                            <outlet property="likeImg" destination="dJ7-gA-2nu" id="yFc-eq-3Nc"/>
                                             <outlet property="likesLbl" destination="YRm-cC-siI" id="UPN-eo-tLi"/>
                                             <outlet property="postImg" destination="K0l-5n-THu" id="7RE-Eq-I4V"/>
                                             <outlet property="profileImg" destination="U01-fx-r3l" id="anY-QV-jMy"/>
