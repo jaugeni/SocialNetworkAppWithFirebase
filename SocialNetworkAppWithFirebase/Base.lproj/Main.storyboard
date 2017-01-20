@@ -191,7 +191,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-b1-EXD">
                                         <rect key="frame" x="8" y="8" width="366" height="49"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-Xa-175" customClass="CircleView" customModule="SocialNetworkAppWithFirebase" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-Xa-175" customClass="CircleView" customModule="SocialNetworkAppWithFirebase" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.082352941176470587" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <gestureRecognizers/>
@@ -227,6 +227,9 @@
                                                         <real key="value" value="24.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="postBtnPressed:" destination="zQQ-Jc-eMa" eventType="touchUpInside" id="sci-VV-fX2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -374,6 +377,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="hBq-hs-6Wh" id="Qsf-yp-Bum"/>
                         <outlet property="imageAddOutlet" destination="Ama-Xa-175" id="kQJ-dY-1LM"/>
                         <outlet property="tableView" destination="E7i-fe-YGc" id="KAa-0x-eVC"/>
                     </connections>
