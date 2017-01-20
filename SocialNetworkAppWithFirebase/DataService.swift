@@ -19,7 +19,7 @@ class DataService {
     private var _REF_POSTS = DB_BASE.child("posts")
     private var _REF_USERS = DB_BASE.child("users")
     
-    var REF_Base: FIRDatabaseReference {
+    var REF_BASA: FIRDatabaseReference {
         return _REF_BASE
     }
     
