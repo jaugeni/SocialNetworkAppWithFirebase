@@ -191,9 +191,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-b1-EXD">
                                         <rect key="frame" x="8" y="8" width="366" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-Xa-175" customClass="CircleView" customModule="SocialNetworkAppWithFirebase" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-Xa-175" customClass="CircleView" customModule="SocialNetworkAppWithFirebase" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.082352941176470587" green="0.396078431372549" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="50q-4p-oHH"/>
                                                     <constraint firstAttribute="width" constant="49" id="upH-hB-sSZ"/>
@@ -203,6 +204,9 @@
                                                         <real key="value" value="24.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="fsE-Wc-Fkh" appends="YES" id="Gtc-gV-oAq"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-hs-6Wh" customClass="FancyField" customModule="SocialNetworkAppWithFirebase" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="248" height="49"/>
@@ -370,6 +374,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAddOutlet" destination="Ama-Xa-175" id="kQJ-dY-1LM"/>
                         <outlet property="tableView" destination="E7i-fe-YGc" id="KAa-0x-eVC"/>
                     </connections>
                 </viewController>
@@ -377,6 +382,11 @@
                 <tapGestureRecognizer id="rfY-KH-59g">
                     <connections>
                         <action selector="signOutPressed:" destination="zQQ-Jc-eMa" id="Qjr-Jf-qHb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fsE-Wc-Fkh">
+                    <connections>
+                        <action selector="addImagepressed:" destination="zQQ-Jc-eMa" id="87L-kx-G6z"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
